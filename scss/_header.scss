@@ -1,0 +1,543 @@
+header {
+    width: 100%;
+    min-width: 1000px;
+    height: 115px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    .top {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        background: $subColor;
+
+        .center {
+            width: 1400px;
+            min-width: 1000px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            form {
+                width: auto;
+                height: auto;
+                display: flex;
+
+                label {
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+                    position: relative;
+
+                    .deco {
+                        width: 42px;
+                        height: 28px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: $mainMixColor;
+                        border-radius: 50px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 5;
+
+                        .ac_ic {
+                            width: 16px;
+                            height: 18px;
+                            position: relative;
+                            z-index: 10;
+                        }
+
+                        .pw_ic {
+                            width: 14px;
+                            height: 18px;
+                            position: relative;
+                            z-index: 10;
+                        }
+                    }
+
+                    input {
+                        width: 200px;
+                        height: 28px;
+                        border-radius: 50px;
+                        border: none;
+                        padding: 0 20px 0 50px;
+                        margin-right: 10px;
+                    }
+
+                    .forget {
+                        width: 21px;
+                        height: 21px;
+                        position: absolute;
+                        top: 4px;
+                        right: 18px;
+                        z-index: 5;
+                        cursor: pointer;
+                    }
+                }
+
+                button {
+                    width: 86px;
+                    height: 28px;
+                    background: $mainMixColor;
+                    border-radius: 50px;
+                    border: 1px solid transparent;
+                    margin-right: 10px;
+                    color: $subFONT;
+                    font-size: 18px;
+                    font-weight: bold;
+
+                    &:nth-of-type(1) {
+                        background: $hightLightMix;
+                        color: $mainFONT;
+                    }
+
+                    &:hover,&:active,&.active {
+                        background: $btnHOV_bg;
+                        color: $subFONT;
+                        border-color: $btnHOVborder;
+                    }
+                }
+            }
+
+            .lang {
+                width: 100px;
+                height: 28px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $mainColor;
+                border-radius: 50px;
+                color: $subFONT;
+                margin-left: 10px;
+                cursor: pointer;
+
+                span {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width:  6px 4px 0 4px ;
+                    border-color: $subFONT transparent transparent transparent;
+                    margin-left: 5px;
+                }
+            }
+        }
+        //登入後
+        .afterLogin {
+            width: 1400px;
+            min-width: 1000px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+
+            .center {
+                width: 1400px;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
+                ul {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .id {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        justify-content: flex-end;
+        
+                        p {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #7d0022;
+                        }
+
+                        em {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #814c00;
+                            padding: 0 10px;
+                        }
+                    }
+                    .wallet {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+        
+                        .total {
+                            width: auto;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            padding: 0 20px;
+                            border: 1px solid #7d0022;
+                            background: #ffffff;
+                            margin-right:10px;
+                            cursor: pointer;
+
+                            &:hover,&:active,&.active {
+                                background: #000;
+                                color: #ffb21d;
+                                border: 1px solid #ffb21d;
+
+                                i {
+                                    border-color: #ffb21d transparent #ffb21d transparent;
+                                }
+                            }
+
+                            .moneyTotal {
+                                margin-right: 10px;
+                                text-align: center;
+                                font-weight: bold;
+                            }
+
+                            .faSolid {
+                                width: 8px;
+                                height: 8px;
+                                border-width: 5px 5px 0 5px;
+                                border-style: solid;
+                                border-color: #000000 transparent #000000 transparent;
+                                -webkit-transform: rotate(135deg);
+                                transform: rotate(0deg);
+                                position: absolute;
+                                top: 12px;
+                                right: 10px;
+
+                                &.faSortDown {
+                                    margin-bottom: 5px;
+                                }
+        
+                                &.faChevronDown {
+                                    margin: 2px 0 0 2px;
+                                }
+                            }
+        
+                            //平台點數
+                            .transferInfo {
+                                display: none;
+                                width: 290px;
+                                height: auto;
+                                position: absolute;
+                                top: 33px;
+                                left: 0;
+                                z-index: 25;
+        
+                                &.display {
+                                    display: block;
+                                    background: #ffb21d;
+                                }
+        
+                                .platform {
+                                    width: 100%;
+                                    height: auto;
+                                    border-right: none;
+                                    box-shadow: none;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 15px;
+                                    border: 1px solid #7d0022;
+                                    border-bottom: 0;
+
+                                    &:last-child {
+                                        border-bottom: 1px solid #7d0022;
+                                    }
+
+                                    p {
+                                        font-weight: bold;
+                                        color: #000000;
+
+                                        span {
+                                            color: #C70036;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .buttonGroup {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            padding-right: 10px;
+        
+                            button {
+                                width: 86px;
+                                height: 28px;
+                                font-size: 18px;
+                                font-weight: bold;
+                                margin: 0 5px;
+                                border-radius: 15px;
+                                
+                                &:hover,&:active,&.active {
+                                    background: #000;
+                                    color: #ffb21d;
+                                    border: 1px solid #ffb21d;
+                                }
+                                &:last-child {
+                                    background: #C70036;
+                                    color: #ffffff;
+
+                                    &:hover,&:active,&.active {
+                                        background: #ffb21d;
+                                        color: #000;
+                                        border: 1px solid #ffb21d;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                    .language {
+                        width: auto;
+                        height: auto;
+                        position: relative;
+
+                        select {
+                            width: 100px;
+                            height: 28px;
+                            font-size: 18px;
+                            font-weight: bold;
+                            padding-left: 10px;
+                            border-radius: 15px;
+                            cursor: pointer;
+                            border: 1px solid #ffb21d;
+                            background: #000;
+                            color: #ffffff;
+
+                            &:hover,&:active,&.active {
+                                background: #ffb21d;
+                            }
+                            option {
+                                color: #000;
+                                background: #ffb21d;
+                            }
+                        }
+
+                        .faSolid {
+                            width: 8px;
+                            height: 8px;
+                            border-width: 5px 5px 0 5px;
+                            border-style: solid;
+                            border-color: #ffffff transparent #ffffff transparent;
+                            -webkit-transform: rotate(135deg);
+                            transform: rotate(0deg);
+                            position: absolute;
+                            top: 12px;
+                            right: 5px;
+
+                            &.faSortDown {
+                                margin-bottom: 5px;
+                            }
+    
+                            &.faChevronDown {
+                                margin: 2px 0 0 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        width: 100%;
+        height: 75px;
+        display: block;
+        background: $mainColor;
+
+        .navGroup {
+            width: 1400px;
+            min-width: 1000px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+            .logo {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 47px;
+
+                li {
+                    width: auto;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 2%;
+                    background: transparent;
+                    border-radius: 50px;
+                    color: $mainFONT;
+                    font-size: 20px;
+                    white-space: nowrap;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    
+                    &:hover,&:active,&.active {
+                        background: $liHOV_bg;
+                        color: $mainColor;
+                        text-shadow: 0px 0px 5px $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    //下拉選單
+    .downList {
+        width: 100%;
+        height: auto;
+        // overflow: hidden;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        transition: 0.3s all;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+        .listWrap {
+            width: 100%;
+            height: 230px;
+            background: #00000073;
+
+            .center {
+                width: 1400px;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+    
+                ol {
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    align-items: center;
+                    
+                    &.display {
+                        display: flex;
+                    }
+                    
+                    li {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        margin: 10px 50px 0 0 ;
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                        p { 
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: #ffffff;
+                            padding-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 1480px) {
+
+        .bottom {
+            .center {
+                width: 95%;
+                min-width: 900px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1460px) {
+
+        .bottom {
+            .center {
+                width: 95%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1440px) {
+
+        .top {
+            .center {
+                width: 95%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1157px) {
+        
+        .bottom {
+            .center {
+                ul {
+                    li {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1060px) {
+        
+        .bottom {
+            .center {
+                ul {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1050px) {
+        
+        .top {
+            .center {
+                width: 94%;
+                min-width: 900px;
+            }
+        }
+    }
+}

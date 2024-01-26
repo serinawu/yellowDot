@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link class="colorSystem" rel="stylesheet" href="./css_gold/colorStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
+    <script src="./js/javascript.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body class="unlogin">
+    <header>
+        <div class="top">
+            <div class="center">
+                <form>
+                    <label>
+                        <div class="deco">
+                            <div class="ac_ic"></div>
+                        </div>
+                        <input class="ac" type="text">
+                    </label>
+                    <label>
+                        <div class="deco">
+                            <div class="pw_ic"></div>
+                        </div>
+                        <input class="pw" type="password">
+                        <div class="forget"></div>
+                    </label>
+                    <button class="login" type="button" onclick="window.location.href='./html/innerpage.html'">登入</button>
+                    <button class="signUP" type="button" onclick="window.location.href='./html/register.html'">註冊</button>
+                </form>
+                <div class="lang">繁體中文<span></span></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="navGroup">
+                <div class="logo">
+                    <img src="./img/logo.png">
+                </div>
+                <ul>
+                    <li class="active"><p>首頁</p></li>
+                    <li class="sport"><p>體育賽事</p></li>
+                    <li class="live"><p>真人娛樂</p></li>
+                    <li class="slot"><p>老虎機</p></li>
+                    <li class="ticket"><p>彩票</p></li>
+                    <li class="fish"><p>捕魚機</p></li>
+                    <li class="board"><p>棋牌遊戲</p></li>
+                    <li><p>優惠</p></li>
+                    <li><p>VIP會員</p></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 下拉選單 -->
+        <div class="downList ">
+            <div class="listWrap">
+                <div class="center">
+                    <ol class="sport">
+                        <li>
+                            <img src="./img/36588.png" alt="">
+                            <p>36588</p>
+                        </li>
+                    </ol>
+                    <ol class="live">
+                        <li>
+                            <img src="./img/downlist2.png" alt="">
+                            <p>MW真人娛樂</p>
+                        </li>
+                        <li>
+                            <img src="./img/downlist1.png" alt="">
+                            <p>DG真人娛樂</p>
+                        </li>
+                    </ol>
+                    <ol class="slot">
+                        <li>
+                            <img src="./img/slot_1.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/slot_4.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img//slot_3.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="ticket">
+                        <li>
+                            <img src="./img/fish_1.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="fish">
+                        <li>
+                            <img src="./img/fish_1.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/fish_2.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/fish_3.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/fish_4.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="board">
+                        <li>
+                            <img src="./img/board_1.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/board_2.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/board_3.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/board_4.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/board_5.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="./img/board_6.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="home">
+        <!-- 輪播圖 -->
+        <div class="ad swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="banner" src="./img/banner.png">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- 跑馬燈 -->
+        <div class="mq">
+            <div class="mqTitle">
+                <div class="mqIC"></div>
+            </div>
+            <div class="textBox">
+                <p class="content">我是跑馬燈喔測試設123123123123123</p>
+            </div>
+        </div>
+        <div class="mainWrap">
+            <!-- 遊戲入口 -->
+            <article class="gameType">
+                <div class="title">
+                    <div class="bigTitle">
+                        <span>應有盡有</span>
+                        <span>享你所有</span>
+                    </div>
+                    <p class="subTitle">本平台提供最全面的遊戲模式。從真人娛樂到捕魚機，給你多種玩法，百種樂趣，等你來體驗!</p>
+                </div>
+                <div class="content">
+                    <div class="gameBlock">
+                        <div class="gamePic">
+                            <img class="live" src="./img/gameType/live.png">
+                        </div>
+                        <div class="typeNameLayer">
+                            <p class="chTitle">真人視訊</p>
+                            <p class="enTitle">LIVE</p>
+                        </div>
+                        <div class="detailLayer">
+                            <div class="outter">
+                                <div class="brandBtn">
+                                    <button type="button">
+                                        <div class="dg"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="sa"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="og"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="ab"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="wm"></div>
+                                    </button>
+                                </div>
+                                <div class="checkMore">
+                                    <p>點擊進入</p>
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameBlock">
+                        <div class="gamePic">
+                            <img class="sport" src="./img/gameType/sport.png">
+                        </div>
+                        <div class="typeNameLayer">
+                            <p class="chTitle">體育賽事</p>
+                            <p class="enTitle">SPORT</p>
+                        </div>
+                        <div class="detailLayer">
+                            <div class="outter">
+                                <div class="brandBtn">
+                                    <button type="button">
+                                        <div class="dg"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="sa"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="og"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="ab"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="wm"></div>
+                                    </button>
+                                </div>
+                                <div class="checkMore">
+                                    <p>點擊進入</p>
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameBlock">
+                        <div class="gamePic">
+                            <img class="slot" src="./img/gameType/slot.png">
+                        </div>
+                        <div class="typeNameLayer">
+                            <p class="chTitle">老虎機</p>
+                            <p class="enTitle">SLOT</p>
+                        </div>
+                        <div class="detailLayer">
+                            <div class="outter">
+                                <div class="brandBtn">
+                                    <button type="button">
+                                        <div class="dg"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="sa"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="og"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="ab"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="wm"></div>
+                                    </button>
+                                </div>
+                                <div class="checkMore">
+                                    <p>點擊進入</p>
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameBlock">
+                        <div class="gamePic">
+                            <img class="poker" src="./img/gameType/poker.png">
+                        </div>
+                        <div class="typeNameLayer">
+                            <p class="chTitle">棋牌遊戲</p>
+                            <p class="enTitle">POKER</p>
+                        </div>
+                        <div class="detailLayer">
+                            <div class="outter">
+                                <div class="brandBtn">
+                                    <button type="button">
+                                        <div class="dg"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="sa"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="og"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="ab"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="wm"></div>
+                                    </button>
+                                </div>
+                                <div class="checkMore">
+                                    <p>點擊進入</p>
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameBlock">
+                        <div class="gamePic">
+                            <img class="lottery" src="./img/gameType/lottery.png">
+                        </div>
+                        <div class="typeNameLayer">
+                            <p class="chTitle">彩票</p>
+                            <p class="enTitle">LOTTERY</p>
+                        </div>
+                        <div class="detailLayer">
+                            <div class="outter">
+                                <div class="brandBtn">
+                                    <button type="button">
+                                        <div class="dg"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="sa"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="og"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="ab"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="wm"></div>
+                                    </button>
+                                </div>
+                                <div class="checkMore">
+                                    <p>點擊進入</p>
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameBlock">
+                        <div class="gamePic">
+                            <img class="fish" src="./img/gameType/fish.png">
+                        </div>
+                        <div class="typeNameLayer">
+                            <p class="chTitle">捕魚機</p>
+                            <p class="enTitle">FISH</p>
+                        </div>
+                        <div class="detailLayer">
+                            <div class="outter">
+                                <div class="brandBtn">
+                                    <button type="button">
+                                        <div class="dg"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="sa"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="og"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="ab"></div>
+                                    </button>
+                                    <button type="button">
+                                        <div class="wm"></div>
+                                    </button>
+                                </div>
+                                <div class="checkMore">
+                                    <p>點擊進入</p>
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- 投注入口 -->
+            <article class="bet">
+                <div class="title">
+                    <div class="bigTitle">
+                        <span>賽事最全</span>
+                        <span>下注最簡</span>
+                    </div>
+                    <p class="subTitle">每天提供上千場賽事，讓您關注不無聊。並提供最快速的下注方式，讓您快速上手，一鍵下注!</p>
+                </div>
+                <div class="content">
+                    <div class="betswiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="betDetail">
+                                    <div class="outterBox">
+                                        <div class="titleLine">
+                                            <p class="gameName">西班牙甲級聯賽</p>
+                                            <span>2021/07/05 17:00</span>
+                                        </div>
+                                        <div class="teamName">
+                                            <div class="teamBox tA">
+                                                <div class="logo">
+                                                    <div class="md"></div>
+                                                </div>
+                                                <p class="name">皇家馬德里</p>
+                                            </div>
+                                            <img class="vs" src="./img/icon/VS.png">
+                                            <div class="teamBox tB">
+                                                <div class="logo">
+                                                    <div class="ba"></div>
+                                                </div>
+                                                <p class="name">巴塞隆納</p>
+                                            </div>
+                                        </div>
+                                        <div class="pointBox">
+                                            <div class="stautsBox">
+                                                <p>勝<span>0.8</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>平<span>0.9</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>負<span>0.1</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="getBet">
+                                            <button type="button">點擊下注</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="betDetail">
+                                    <div class="outterBox">
+                                        <div class="titleLine">
+                                            <p class="gameName">西班牙甲級聯賽</p>
+                                            <span>2021/07/05 17:00</span>
+                                        </div>
+                                        <div class="teamName">
+                                            <div class="teamBox tA">
+                                                <div class="logo">
+                                                    <div class="md"></div>
+                                                </div>
+                                                <p class="name">皇家馬德里</p>
+                                            </div>
+                                            <img class="vs" src="./img/icon/VS.png">
+                                            <div class="teamBox tB">
+                                                <div class="logo">
+                                                    <div class="ba"></div>
+                                                </div>
+                                                <p class="name">巴塞隆納</p>
+                                            </div>
+                                        </div>
+                                        <div class="pointBox">
+                                            <div class="stautsBox">
+                                                <p>勝<span>0.8</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>平<span>0.9</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>負<span>0.1</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="getBet">
+                                            <button type="button">點擊下注</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="betDetail">
+                                    <div class="outterBox">
+                                        <div class="titleLine">
+                                            <p class="gameName">西班牙甲級聯賽</p>
+                                            <span>2021/07/05 17:00</span>
+                                        </div>
+                                        <div class="teamName">
+                                            <div class="teamBox tA">
+                                                <div class="logo">
+                                                    <div class="md"></div>
+                                                </div>
+                                                <p class="name">皇家馬德里</p>
+                                            </div>
+                                            <img class="vs" src="./img/icon/VS.png">
+                                            <div class="teamBox tB">
+                                                <div class="logo">
+                                                    <div class="ba"></div>
+                                                </div>
+                                                <p class="name">巴塞隆納</p>
+                                            </div>
+                                        </div>
+                                        <div class="pointBox">
+                                            <div class="stautsBox">
+                                                <p>勝<span>0.8</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>平<span>0.9</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>負<span>0.1</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="getBet">
+                                            <button type="button">點擊下注</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="betDetail">
+                                    <div class="outterBox">
+                                        <div class="titleLine">
+                                            <p class="gameName">西班牙甲級聯賽</p>
+                                            <span>2021/07/05 17:00</span>
+                                        </div>
+                                        <div class="teamName">
+                                            <div class="teamBox tA">
+                                                <div class="logo">
+                                                    <div class="md"></div>
+                                                </div>
+                                                <p class="name">皇家馬德里</p>
+                                            </div>
+                                            <img class="vs" src="./img/icon/VS.png">
+                                            <div class="teamBox tB">
+                                                <div class="logo">
+                                                    <div class="ba"></div>
+                                                </div>
+                                                <p class="name">巴塞隆納</p>
+                                            </div>
+                                        </div>
+                                        <div class="pointBox">
+                                            <div class="stautsBox">
+                                                <p>勝<span>0.8</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>平<span>0.9</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>負<span>0.1</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="getBet">
+                                            <button type="button">點擊下注</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="betDetail">
+                                    <div class="outterBox">
+                                        <div class="titleLine">
+                                            <p class="gameName">西班牙甲級聯賽</p>
+                                            <span>2021/07/05 17:00</span>
+                                        </div>
+                                        <div class="teamName">
+                                            <div class="teamBox tA">
+                                                <div class="logo">
+                                                    <div class="md"></div>
+                                                </div>
+                                                <p class="name">皇家馬德里</p>
+                                            </div>
+                                            <img class="vs" src="./img/icon/VS.png">
+                                            <div class="teamBox tB">
+                                                <div class="logo">
+                                                    <div class="ba"></div>
+                                                </div>
+                                                <p class="name">巴塞隆納</p>
+                                            </div>
+                                        </div>
+                                        <div class="pointBox">
+                                            <div class="stautsBox">
+                                                <p>勝<span>0.8</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>平<span>0.9</span></p>
+                                            </div>
+                                            <div class="stautsBox">
+                                                <p>負<span>0.1</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="getBet">
+                                            <button type="button">點擊下注</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev02"></div>
+                        <div class="swiper-button-next02"></div>
+                    </div> 
+                    <button type="button" class="getIN">點擊進入</button>
+                </div>
+            </article>
+            <!-- appAD -->
+            <article class="appAD">
+                <div class="title">
+                    <div class="bigTitle">
+                        <span>自主開發</span>
+                        <span>穩定快速</span>
+                    </div>
+                    <p class="subTitle">本平台致力於開發更穩定便捷的APP，以求帶給客戶端更極致的體驗，讓你走到哪玩到哪。</p>
+                </div>
+                <div class="content">
+                    <div class="adPic">
+                        <div class="mainObj"></div>
+                        <div class="mainObjLight"></div>
+                        <div class="coinAll"></div>
+                        <div class="light01"></div>
+                        <div class="light02"></div>
+                    </div>
+                    <button type="button" class="getIN">點擊下載</button>
+                </div>
+            </article>
+            <!-- 量表介紹 -->
+            <article class="introduce">
+                <div class="dataBlock">
+                    <div class="title">
+                        <div class="bigTitle">
+                            <span>服務優勢</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="itemLine">
+                            <div class="item">
+                                <p class="itemName">存款到帳<span class="average">平均時間</span></p>
+                                <p class="number">40秒</p>
+                            </div>
+                            <div class="bar">
+                                <div class="percent"></div>
+                            </div>
+                        </div>
+                        <div class="itemLine">
+                            <div class="item">
+                                <p class="itemName">取款到帳<span class="average">平均時間</span></p>
+                                <p class="number">4.5秒</p>
+                            </div>
+                            <div class="bar">
+                                <div class="percent withdraw"></div>
+                            </div>
+                        </div>
+                        <div class="itemLine">
+                            <div class="item">
+                                <p class="itemName">多樣的支付方式</p>
+                                <p class="number">70家</p>
+                            </div>
+                            <div class="bar">
+                                <div class="percent payWay"></div>
+                            </div>
+                            <div class="payWayy"></div>
+                        </div>
+                        <div class="itemLine">
+                            <div class="item">
+                                <p class="itemName">元平台合作</p>
+                                <p class="number">20家</p>
+                            </div>
+                            <div class="bar">
+                                <div class="percent mulitplat"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataBlock">
+                    <div class="title">
+                        <div class="bigTitle">
+                            <span>產品優勢</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="textBox">
+                            <div class="text">
+                                <p class="sTitle">真人在線</p>
+                                <p class="subTit">真人即時線上娛樂，給你最真實的享受。</p>
+                            </div>
+                            <div class="iconArea live"></div>
+                        </div>
+                        <div class="textBox">
+                            <div class="text">
+                                <p class="sTitle">多元化體育平台</p>
+                                <p class="subTit">每天提供上千場賽事，即時更新讓您不錯過任何資訊!</p>
+                            </div>
+                            <div class="iconArea sport"></div>
+                        </div>
+                        <div class="textBox">
+                            <div class="text">
+                                <p class="sTitle">老虎機</p>
+                                <p class="subTit">與多家平台合作，給你更多新玩法，新花樣。</p>
+                            </div>
+                            <div class="iconArea slot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataBlock">
+                    <div class="title">
+                        <div class="bigTitle">
+                            <span>在地化服務</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="textBox">
+                            <div class="text">
+                                <p class="sTitle">在地語言</p>
+                                <p class="subTit">提供多種語言選項，以符合在地需求。</p>
+                            </div>
+                            <div class="iconArea local"></div>
+                        </div>
+                        <div class="textBox">
+                            <div class="text">
+                                <p class="sTitle">顛覆性產品</p>
+                                <p class="subTit">經過大量測試，以創造最符合亞洲人的產品。</p>
+                            </div>
+                            <div class="iconArea product"></div>
+                        </div>
+                        <div class="textBox">
+                            <div class="text">
+                                <p class="sTitle">極致用戶體驗</p>
+                                <p class="subTit">我們持續開發新產品，致力於帶給客戶最舒適的用戶體驗。</p>
+                            </div>
+                            <div class="iconArea ui"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><p>最新公告</p></li>
+                <li><p>優惠</p></li>
+                <li><p>VIP會員</p></li>
+                <li><p>幫助中心</p></li>
+                <li><p>關於我們</p></li> 
+            </ul>
+        </nav>
+        <div class="aboutCopany">
+            <p>致力於成為世界頂級的在線娛樂公司。因此，在處理任何事情的時候，都會修先考慮客戶的利益。客戶的最大滿意就是我們的成功。<br>提供全天候24小時的在線客服，提供專業化和人性化相結合的最佳服務。</p>
+        </div>
+    </footer>
+    <aside>
+        <div class="app">
+            <div class="content">APP下載</div>
+            <ul>
+                <li class="android">Android下載</li>
+                <li class="ios">ios下載</li>
+            </ul>
+        </div>
+    </aside>
+    <aside>
+        <div class="cs24hr">
+            <div class="content">24hr客服</div>
+            <ul>
+                <li class="online">線上客服</li>
+                <li class="line">LINE</li>
+                <li class="wechate">WeChate</li>
+            </ul>
+        </div>
+    </aside>
+    <aside>
+        <div class="app">
+            <div class="content">APP下載</div>
+            <ul>
+                <li class="android">Android下載</li>
+                <li class="ios">ios下載</li>
+            </ul>
+        </div>
+    </aside>
+    <aside>
+        <div class="cs24hr">
+            <div class="content">24hr客服</div>
+            <ul>
+                <li class="online">線上客服</li>
+                <li class="line">LINE</li>
+                <li class="wechate">WeChate</li>
+            </ul>
+        </div>
+    </aside>
+    <div class="bg">
+        <span class="bigCircle"></span>
+        <span class="midCircle"></span>
+        <span class="smallCircle"></span>
+        <span class="bigCircle right"></span>
+        <span class="midCircle right"></span>
+        <span class="smallCircle right"></span>
+    </div>
+    <!-- 彈窗 -->
+    <div class="filter">
+        <!-- 忘記密碼 -->
+        <div class="jumpWindow fgPW">
+            <div class="title">
+                <p>忘記密碼</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <input class="inputStyle_1" type="text" placeholder="請輸入您的手機號碼">
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">重置密碼</button>
+                <p class="remind">我們將發送新的密碼到您的手機，請查收簡訊</p>
+            </div>
+        </div>
+        <!-- 請先登入 -->
+        <div class="jumpWindow plsLogin">
+            <div class="title">
+                <p>提示</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p>請先登入</p>
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">確認</button>
+            </div>
+        </div>
+        <!-- 最新公告 -->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>最新消息</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="typeList">
+                        <button class="hot active">熱門</button>
+                        <button class="normal">一般</button>
+                        <button class="deposit">存款</button>
+                    </li>
+                    <ol class="hotBox display">
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                    </ol>
+                    <ol class="normalBox">
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                    </ol>
+                    <ol class="depositBox"></ol>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
