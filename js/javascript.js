@@ -67,43 +67,6 @@ $(function(){
     })
 })
 
-//下拉選單
-$(function(){
-    $("header .navGroup ul .sport").hover(function(){
-        $("header .downList").toggleClass("display");
-        $("header .downList .sport").addClass("display");
-        $("header .downList .sport").siblings().removeClass("display");
-    })
-    $("header .navGroup ul .live").hover(function(){
-        $("header .downList").toggleClass("display");
-        $("header .downList .live").addClass("display");
-        $("header .downList .live").siblings().removeClass("display");
-    })
-    $("header .navGroup ul .slot").hover(function(){
-        $("header .downList").toggleClass("display");
-        $("header .downList .slot").addClass("display");
-        $("header .downList .slot").siblings().removeClass("display");
-    })
-    $("header .navGroup ul .ticket").hover(function(){
-        $("header .downList").toggleClass("display");
-        $("header .downList .ticket").addClass("display");
-        $("header .downList .ticket").siblings().removeClass("display");
-    })
-    $("header .navGroup ul .fish").hover(function(){
-        $("header .downList").toggleClass("display");
-        $("header .downList .fish").addClass("display");
-        $("header .downList .fish").siblings().removeClass("display");
-    })
-    $("header .navGroup ul .board").hover(function(){
-        $("header .downList").toggleClass("display");
-        $("header .downList .board").addClass("display");
-        $("header .downList .board").siblings().removeClass("display");
-    })
-    $("header .downList").hover(function(){
-        $(this).toggleClass("display");
-    })
-})
-
 //回到頂部
 $(function(){
 	var scrollTop = $(window).scrollTop();

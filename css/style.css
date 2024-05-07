@@ -340,8 +340,8 @@ html body header .top .center form label .deco {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, right top, from(#ffb21d), to(#fb890e));
-  background: linear-gradient(to right, #ffb21d 0%, #fb890e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#181576), to(#2A23EB));
+  background: linear-gradient(to right, #181576 0%, #2A23EB 100%);
   border-radius: 50px;
   position: absolute;
   top: 0;
@@ -353,12 +353,16 @@ html body header .top .center form label .deco .ac_ic {
   height: 18px;
   position: relative;
   z-index: 10;
+  -webkit-filter: brightness(8);
+          filter: brightness(8);
 }
 html body header .top .center form label .deco .pw_ic {
   width: 14px;
   height: 18px;
   position: relative;
   z-index: 10;
+  -webkit-filter: brightness(8);
+          filter: brightness(8);
 }
 html body header .top .center form label input {
   width: 200px;
@@ -380,8 +384,8 @@ html body header .top .center form label .forget {
 html body header .top .center form button {
   width: 86px;
   height: 28px;
-  background: -webkit-gradient(linear, left top, right top, from(#ffb21d), to(#fb890e));
-  background: linear-gradient(to right, #ffb21d 0%, #fb890e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#181576), to(#2A23EB));
+  background: linear-gradient(to right, #181576 0%, #2A23EB 100%);
   border-radius: 50px;
   border: 1px solid transparent;
   margin-right: 10px;
@@ -413,7 +417,7 @@ html body header .top .center .lang {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #ffb21d;
+  border: 1px solid #2A23EB;
   border-radius: 50px;
   color: #ffffff;
   margin-left: 10px;
@@ -484,12 +488,12 @@ html body header .top .afterLogin .center ul .id {
 html body header .top .afterLogin .center ul .id p {
   font-size: 14px;
   font-weight: bold;
-  color: #7d0022;
+  color: #afafaf;
 }
 html body header .top .afterLogin .center ul .id em {
   font-size: 14px;
   font-weight: bold;
-  color: #814c00;
+  color: #a1ea22;
   padding: 0 10px;
 }
 html body header .top .afterLogin .center ul .wallet {
@@ -510,18 +514,18 @@ html body header .top .afterLogin .center ul .wallet .total {
           align-items: center;
   position: relative;
   padding: 0 20px;
-  border: 1px solid #7d0022;
+  border: 1px solid #a1ea22;
   background: #ffffff;
   margin-right: 10px;
   cursor: pointer;
 }
 html body header .top .afterLogin .center ul .wallet .total:hover, html body header .top .afterLogin .center ul .wallet .total:active, html body header .top .afterLogin .center ul .wallet .total.active {
   background: #000;
-  color: #ffb21d;
-  border: 1px solid #ffb21d;
+  color: #a1ea22;
+  border: 1px solid #a1ea22;
 }
 html body header .top .afterLogin .center ul .wallet .total:hover i, html body header .top .afterLogin .center ul .wallet .total:active i, html body header .top .afterLogin .center ul .wallet .total.active i {
-  border-color: #ffb21d transparent #ffb21d transparent;
+  border-color: #a1ea22 transparent #ffb21d transparent;
 }
 html body header .top .afterLogin .center ul .wallet .total .moneyTotal {
   margin-right: 10px;
@@ -557,7 +561,7 @@ html body header .top .afterLogin .center ul .wallet .total .transferInfo {
 }
 html body header .top .afterLogin .center ul .wallet .total .transferInfo.display {
   display: block;
-  background: #ffb21d;
+  background: #a1ea22;
 }
 html body header .top .afterLogin .center ul .wallet .total .transferInfo .platform {
   width: 100%;
@@ -584,6 +588,8 @@ html body header .top .afterLogin .center ul .wallet .total .transferInfo .platf
 html body header .top .afterLogin .center ul .wallet .total .transferInfo .platform p {
   font-weight: bold;
   color: #000000;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 html body header .top .afterLogin .center ul .wallet .total .transferInfo .platform p span {
   color: #C70036;
@@ -599,24 +605,27 @@ html body header .top .afterLogin .center ul .wallet .buttonGroup {
 html body header .top .afterLogin .center ul .wallet .buttonGroup button {
   width: 86px;
   height: 28px;
+  background: -webkit-gradient(linear, left top, right top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   font-size: 18px;
   font-weight: bold;
   margin: 0 5px;
   border-radius: 15px;
+  padding: 0 0 3px;
 }
 html body header .top .afterLogin .center ul .wallet .buttonGroup button:hover, html body header .top .afterLogin .center ul .wallet .buttonGroup button:active, html body header .top .afterLogin .center ul .wallet .buttonGroup button.active {
   background: #000;
-  color: #ffb21d;
-  border: 1px solid #ffb21d;
+  color: #a1ea22;
+  border: 1px solid #a1ea22;
 }
 html body header .top .afterLogin .center ul .wallet .buttonGroup button:last-child {
   background: #C70036;
   color: #ffffff;
 }
 html body header .top .afterLogin .center ul .wallet .buttonGroup button:last-child:hover, html body header .top .afterLogin .center ul .wallet .buttonGroup button:last-child:active, html body header .top .afterLogin .center ul .wallet .buttonGroup button:last-child.active {
-  background: #ffb21d;
+  background: #eae722;
   color: #000;
-  border: 1px solid #ffb21d;
+  border: 1px solid #eae722;
 }
 html body header .top .afterLogin .center ul .language {
   width: auto;
@@ -631,16 +640,18 @@ html body header .top .afterLogin .center ul .language select {
   padding-left: 10px;
   border-radius: 15px;
   cursor: pointer;
-  border: 1px solid #ffb21d;
+  border: 1px solid #a1ea22;
   background: #000;
   color: #ffffff;
 }
 html body header .top .afterLogin .center ul .language select:hover, html body header .top .afterLogin .center ul .language select:active, html body header .top .afterLogin .center ul .language select.active {
-  background: #ffb21d;
+  background: #a1ea22;
+  color: #131313;
 }
 html body header .top .afterLogin .center ul .language select option {
   color: #000;
   background: #ffb21d;
+  color: #ffffff;
 }
 html body header .top .afterLogin .center ul .language .faSolid {
   width: 8px;
@@ -664,7 +675,7 @@ html body header .bottom {
   width: 100%;
   height: 75px;
   display: block;
-  background: #ffb21d;
+  background: #2A23EB;
 }
 html body header .bottom .navGroup {
   width: 1400px;
@@ -687,6 +698,22 @@ html body header .bottom .navGroup .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+html body header .bottom .navGroup .logo::before {
+  content: "LOGO";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: bold;
 }
 html body header .bottom .navGroup .logo img {
   width: 100%;
@@ -720,7 +747,7 @@ html body header .bottom .navGroup ul li {
   padding: 0 2%;
   background: transparent;
   border-radius: 50px;
-  color: #1a1a1a;
+  color: #ffffff;
   font-size: 20px;
   white-space: nowrap;
   -webkit-transition: 0.3s;
@@ -730,8 +757,8 @@ html body header .bottom .navGroup ul li {
 html body header .bottom .navGroup ul li:hover, html body header .bottom .navGroup ul li:active, html body header .bottom .navGroup ul li.active {
   background: -webkit-gradient(linear, left top, right top, from(#333333), color-stop(75%, #0e0e0e));
   background: linear-gradient(to right, #333333 0%, #0e0e0e 75%);
-  color: #ffb21d;
-  text-shadow: 0px 0px 5px #ffb21d;
+  color: #a1ea22;
+  text-shadow: 0px 0px 5px #2A23EB;
 }
 html body header .downList {
   width: 100%;
@@ -803,12 +830,16 @@ html body header .downList .listWrap .center ol li img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-filter: brightness(0.1);
+          filter: brightness(0.1);
 }
 html body header .downList .listWrap .center ol li p {
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
   padding-top: 8px;
+  -webkit-filter: blur(3px) !important;
+          filter: blur(3px) !important;
 }
 @media only screen and (max-width: 1480px) {
   html body header .bottom .center {
@@ -912,8 +943,7 @@ html body .mq {
   max-width: 1400px;
   min-width: 1000px;
   height: 40px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #ffb21d), color-stop(24%, #ffb21d), color-stop(54%, #ffeb7a), color-stop(81%, #ffb21d), color-stop(96%, #ffb21d));
-  background: linear-gradient(to right, #ffb21d 3%, #ffb21d 24%, #ffeb7a 54%, #ffb21d 81%, #ffb21d 96%);
+  background: #a1ea22;
   border-radius: 50px;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2274509804);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2274509804);
@@ -932,8 +962,8 @@ html body .mq .mqTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, right top, from(#ffb21d), to(#fb890e));
-  background: linear-gradient(to right, #ffb21d 0%, #fb890e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   border-radius: 50px;
   -webkit-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2274509804);
           box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2274509804);
@@ -1079,8 +1109,8 @@ html body .mainWrap article.gameType .title .bigTitle span {
   width: auto;
   color: transparent;
   text-align: end;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffb21d), to(#fb890e));
-  background: linear-gradient(to top, #ffb21d 0%, #fb890e 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to top, #a1ea22 0%, #34da14 100%);
   -webkit-background-clip: text;
           background-clip: text;
 }
@@ -1098,7 +1128,7 @@ html body .mainWrap article.gameType .content .gameBlock {
   height: 203px;
   background: -webkit-gradient(linear, left bottom, left top, from(#0d0d0d), to(rgba(87, 87, 87, 0.4862745098)));
   background: linear-gradient(0deg, #0d0d0d 0%, rgba(87, 87, 87, 0.4862745098) 100%);
-  border: 1px solid #ffb21d;
+  border: 1px solid #2A23EB;
   border-radius: 100px 15px 15px 100px;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8274509804);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8274509804);
@@ -1132,7 +1162,7 @@ html body .mainWrap article.gameType .content .gameBlock:last-child .gamePic img
 html body .mainWrap article.gameType .content .gameBlock .gamePic {
   width: 204px;
   height: 204px;
-  background: #ffb21d;
+  background: #2A23EB;
   border-radius: 200px;
   position: absolute;
   top: -2px;
@@ -1174,14 +1204,14 @@ html body .mainWrap article.gameType .content .gameBlock .typeNameLayer p.chTitl
   margin-bottom: 10px;
 }
 html body .mainWrap article.gameType .content .gameBlock .typeNameLayer p.enTitle {
-  color: #ffb21d;
+  color: #2A23EB;
   letter-spacing: 5px;
 }
 html body .mainWrap article.gameType .content .gameBlock .detailLayer {
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#ffb21d), to(#fb8f0f));
-  background: linear-gradient(to right, #ffb21d 0%, #fb8f0f 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1227,7 +1257,7 @@ html body .mainWrap article.gameType .content .gameBlock .detailLayer .outter .b
   border-radius: 8px;
   background: -webkit-gradient(linear, left top, left bottom, from(#292929), to(#171717));
   background: linear-gradient(to bottom, #292929 0%, #171717 100%);
-  border: 1px solid #ffb21d;
+  border: 1px solid #2A23EB;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -1687,8 +1717,8 @@ html body .mainWrap article.appAD .title .bigTitle span {
   width: auto;
   color: transparent;
   text-align: end;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffb21d), to(#fb890e));
-  background: linear-gradient(to top, #ffb21d 0%, #fb890e 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to top, #a1ea22 0%, #34da14 100%);
   -webkit-background-clip: text;
           background-clip: text;
 }
@@ -1724,8 +1754,8 @@ html body .mainWrap article.appAD .content .adPic .mainObj {
   transition: 0.3s;
 }
 html body .mainWrap article.appAD .content .adPic .mainObj.active {
-  -webkit-filter: drop-shadow(10px -10px 90px #ffb21d);
-          filter: drop-shadow(10px -10px 90px #ffb21d);
+  -webkit-filter: drop-shadow(10px -10px 90px #2A23EB);
+          filter: drop-shadow(10px -10px 90px #2A23EB);
 }
 html body .mainWrap article.appAD .content .adPic .coinAll {
   width: 91%;
@@ -1817,25 +1847,25 @@ html body .mainWrap article.appAD .content .adPic .light02.active {
 html body .mainWrap article.appAD .content .getIN {
   width: 178px;
   height: 51px;
-  background: -webkit-gradient(linear, left top, right top, from(#ffb21d), to(#fb890e));
-  background: linear-gradient(to right, #ffb21d 0%, #fb890e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+  border: 1px solid transparent;
   color: #1a1a1a;
   font-size: 20px;
   border-radius: 50px;
-  border: 1px solid transparent;
-  margin: 45px auto 0 auto;
+  margin: 50px auto 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 html body .mainWrap article.appAD .content .getIN:hover, html body .mainWrap article.appAD .content .getIN:active, html body .mainWrap article.appAD .content .getIN.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffb21d), to(#fb890e));
-  background: linear-gradient(to top, #ffb21d 0%, #fb890e 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to top, #a1ea22 0%, #34da14 100%);
   font-weight: bold;
-  -webkit-box-shadow: 0px 0px 10px #ffb21d;
-          box-shadow: 0px 0px 10px #ffb21d;
-  border-color: #ffb034;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
+  -webkit-box-shadow: 0px 0px 10px #a1ea22;
+          box-shadow: 0px 0px 10px #a1ea22;
+  border-color: #a1ea22;
 }
 html body .mainWrap article.introduce {
   display: -webkit-box;
@@ -2175,7 +2205,7 @@ html body footer {
   width: 100%;
   min-width: 1000px;
   height: 260px;
-  background: #ffb21d;
+  background: #777785;
   position: absolute;
   bottom: 0;
   z-index: 999;
@@ -2228,10 +2258,10 @@ html body footer nav ul li:last-child {
 html body footer nav ul li:hover, html body footer nav ul li:active, html body footer nav ul li.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#333333), color-stop(75%, #0e0e0e));
   background: linear-gradient(to top, #333333 0%, #0e0e0e 75%);
-  color: #ffb21d;
+  color: #2A23EB;
 }
 html body footer nav ul li:hover p, html body footer nav ul li:active p, html body footer nav ul li.active p {
-  color: #ffb21d;
+  color: #a1ea22;
 }
 html body footer .aboutCopany {
   width: 100%;
@@ -2263,7 +2293,7 @@ html body aside .app {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #ffb21d;
+  background: #a1ea22 !important;
   border-radius: 10px;
   position: fixed;
   top: 217px;
@@ -2329,7 +2359,7 @@ html body aside .app ul li:hover, html body aside .app ul li:active, html body a
   border: 1px solid #666666;
   -webkit-box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 0.1294117647);
           box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 0.1294117647);
-  color: #ffb21d;
+  color: #2A23EB;
 }
 html body aside .cs24hr {
   width: 110px;
@@ -2343,7 +2373,7 @@ html body aside .cs24hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #ffb21d;
+  background: #a1ea22;
   border-radius: 10px;
   position: fixed;
   top: 217px;
@@ -2409,7 +2439,7 @@ html body aside .cs24hr ul li:hover, html body aside .cs24hr ul li:active, html 
   border: 1px solid #666666;
   -webkit-box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 0.1294117647);
           box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 0.1294117647);
-  color: #ffb21d;
+  color: #2A23EB;
 }
 html body .swiper {
   width: 100%;
@@ -6057,8 +6087,8 @@ html body .bg {
   z-index: -999;
 }
 html body .bg span {
-  background: -webkit-gradient(linear, left top, right top, from(#ffb21d), to(#fb890e));
-  background: linear-gradient(to right, #ffb21d 0%, #fb890e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#181576), to(#2A23EB));
+  background: linear-gradient(to right, #181576 0%, #2A23EB 100%);
   border-radius: 200px;
   -webkit-transition: 0.5s;
   transition: 0.5s;

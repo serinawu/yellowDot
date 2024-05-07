@@ -52,6 +52,7 @@ header {
                             height: 18px;
                             position: relative;
                             z-index: 10;
+                            filter: brightness(8);
                         }
 
                         .pw_ic {
@@ -59,6 +60,7 @@ header {
                             height: 18px;
                             position: relative;
                             z-index: 10;
+                            filter: brightness(8);
                         }
                     }
 
@@ -165,13 +167,13 @@ header {
                         p {
                             font-size: 14px;
                             font-weight: bold;
-                            color: #7d0022;
+                            color: #afafaf;
                         }
 
                         em {
                             font-size: 14px;
                             font-weight: bold;
-                            color: #814c00;
+                            color: $subColor-2;
                             padding: 0 10px;
                         }
                     }
@@ -187,18 +189,18 @@ header {
                             align-items: center;
                             position: relative;
                             padding: 0 20px;
-                            border: 1px solid #7d0022;
+                            border: 1px solid $subColor-2;
                             background: #ffffff;
                             margin-right:10px;
                             cursor: pointer;
 
                             &:hover,&:active,&.active {
                                 background: #000;
-                                color: #ffb21d;
-                                border: 1px solid #ffb21d;
+                                color: $subColor-2;
+                                border: 1px solid $subColor-2;
 
                                 i {
-                                    border-color: #ffb21d transparent #ffb21d transparent;
+                                    border-color: $subColor-2 transparent #ffb21d transparent;
                                 }
                             }
 
@@ -241,7 +243,7 @@ header {
         
                                 &.display {
                                     display: block;
-                                    background: #ffb21d;
+                                    background: $subColor-2;
                                 }
         
                                 .platform {
@@ -263,6 +265,7 @@ header {
                                     p {
                                         font-weight: bold;
                                         color: #000000;
+                                        filter: blur(3px);
 
                                         span {
                                             color: #C70036;
@@ -280,24 +283,26 @@ header {
                             button {
                                 width: 86px;
                                 height: 28px;
+                                background: $hightLightMix;
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin: 0 5px;
                                 border-radius: 15px;
+                                padding: 0 0 3px;
                                 
                                 &:hover,&:active,&.active {
                                     background: #000;
-                                    color: #ffb21d;
-                                    border: 1px solid #ffb21d;
+                                    color: #a1ea22;
+                                    border: 1px solid #a1ea22;
                                 }
                                 &:last-child {
                                     background: #C70036;
                                     color: #ffffff;
 
                                     &:hover,&:active,&.active {
-                                        background: #ffb21d;
+                                        background: #eae722;
                                         color: #000;
-                                        border: 1px solid #ffb21d;
+                                        border: 1px solid #eae722;
                                     }
                                 }
                             }
@@ -317,16 +322,18 @@ header {
                             padding-left: 10px;
                             border-radius: 15px;
                             cursor: pointer;
-                            border: 1px solid #ffb21d;
+                            border: 1px solid $subColor-2;
                             background: #000;
                             color: #ffffff;
 
                             &:hover,&:active,&.active {
-                                background: #ffb21d;
+                                background: $subColor-2;
+                                color: $subColor;
                             }
                             option {
                                 color: #000;
                                 background: #ffb21d;
+                                color: #ffffff;
                             }
                         }
 
@@ -374,6 +381,17 @@ header {
                 height: 100%;
                 display: flex;
                 align-items: center;
+                position: relative;
+
+                &::before {
+                    content: "LOGO";
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $subFONT;
+                    font-size: 38px;
+                    font-weight: bold;
+                }
                 
                 img {
                     width: 100%;
@@ -398,7 +416,7 @@ header {
                     padding: 0 2%;
                     background: transparent;
                     border-radius: 50px;
-                    color: $mainFONT;
+                    color: $subFONT;
                     font-size: 20px;
                     white-space: nowrap;
                     transition: 0.3s;
@@ -406,7 +424,7 @@ header {
                     
                     &:hover,&:active,&.active {
                         background: $liHOV_bg;
-                        color: $mainColor;
+                        color: $subColor-2;
                         text-shadow: 0px 0px 5px $mainColor;
                     }
                 }
@@ -465,12 +483,14 @@ header {
                             width: 100%;
                             height: 100%;
                             object-fit: contain;
+                            filter: brightness(0.1);
                         }
                         p { 
                             font-size: 15px;
                             font-weight: bold;
                             color: #ffffff;
                             padding-top: 8px;
+                            filter: blur(3px) !important;
                         }
                     }
                 }

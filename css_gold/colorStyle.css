@@ -20,8 +20,8 @@ header .UnLoginBox label i {
 }
 
 header .UnLoginBox .loginBtn {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
-  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   border-radius: 3px;
   border: 1px solid #ffffff;
   color: #000000;
@@ -492,6 +492,11 @@ main.innerPage .center > div > nav {
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  background: radial-gradient(rgba(32, 32, 32, 0.3019607843) 0%, rgba(66, 66, 66, 0.4) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.262745098);
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0px 0px 79px rgba(255, 255, 255, 0.2941176471), 0px 0px 8px rgba(0, 0, 0, 0.3254901961);
+  box-shadow: inset 0px 0px 79px rgba(255, 255, 255, 0.2941176471), 0px 0px 8px rgba(0, 0, 0, 0.3254901961);
 }
 
 main.innerPage .center .leftSide p.userAccount {
@@ -515,8 +520,8 @@ main.innerPage .center .leftSide p.joinDay {
 }
 
 main.innerPage .center .leftSide .quickSelect li .quickBtn {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
-  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   border-radius: 50px;
   border: 1px solid #c7a16e;
 }
@@ -697,10 +702,14 @@ main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
 
 main.innerPage .center .midSide .midTop,
 main.innerPage .center .midSide .midBottom {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.2509803922);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.262745098);
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0px 0px 79px rgba(255, 255, 255, 0.2941176471), 0px 0px 8px rgba(0, 0, 0, 0.3254901961);
+  box-shadow: inset 0px 0px 79px rgba(255, 255, 255, 0.2941176471), 0px 0px 8px rgba(0, 0, 0, 0.3254901961);
 }
 
 main.innerPage .center .innerPageTitle {
@@ -731,8 +740,8 @@ main.innerPage .center .midSide .midTop .objectList ul li.payWay {
 }
 
 main.innerPage .center .midSide .midTop .objectList ul li.payWay:hover, main.innerPage .center .midSide .midTop .objectList ul li.payWay:active, main.innerPage .center .midSide .midTop .objectList ul li.payWay.active {
-  background: -webkit-gradient(linear, left top, right top, from(#de9649), to(#e0cb89));
-  background: linear-gradient(to right, #de9649 0%, #e0cb89 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#181576), to(#2A23EB));
+  background: linear-gradient(to right, #181576 0%, #2A23EB 100%);
   color: #ffffff;
 }
 
@@ -1195,8 +1204,8 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li tab
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:first-child {
-  background: -webkit-gradient(linear, left top, right top, from(#de9649), to(#e0cb89));
-  background: linear-gradient(to right, #de9649 0%, #e0cb89 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#181576), to(#2A23EB));
+  background: linear-gradient(to right, #181576 0%, #2A23EB 100%);
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th {
@@ -1649,8 +1658,8 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow .title {
-  background: -webkit-gradient(linear, left top, right top, from(#de9649), to(#e0cb89));
-  background: linear-gradient(to right, #de9649 0%, #e0cb89 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#181576), to(#2A23EB));
+  background: linear-gradient(to right, #181576 0%, #2A23EB 100%);
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
@@ -1832,8 +1841,8 @@ aside.colorPicker .hint i {
 }
 
 .btnStyle_1 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
-  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#a1ea22), to(#34da14));
+  background: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
   border: 1px solid #cccccc;
   border-radius: 5px;
   color: #ffffff;
@@ -1841,8 +1850,8 @@ aside.colorPicker .hint i {
   font-weight: bold;
 }
 .btnStyle_1:hover, .btnStyle_1:active, .btnStyle_1.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#34da14), to(#166f04));
+  background: linear-gradient(to right, #34da14 0%, #166f04 100%);
 }
 .btnStyle_1:disabled {
   background: #c0c0c0;

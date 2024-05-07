@@ -28,9 +28,9 @@ $boxShadow_2: #00000066;
 
 $filter_1: #000000a4;
 
-$linear_1: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
-$linear_1_Active: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-$linear_2: linear-gradient(to right, #de9649 0%, #e0cb89 100%);
+$linear_1: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
+$linear_1_Active: linear-gradient(to right, #34da14 0%, #166f04 100%);
+$linear_2: linear-gradient(to right, #181576 0%, #2A23EB 100%);
 $BankCard_BG: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 
 //header
@@ -472,6 +472,11 @@ main.innerPage .center>div>nav {
     background: $BG_color_2;
     border-radius: 5px;
     box-shadow: 0 5px 10px -5px $boxShadow_2;
+    background: radial-gradient(rgba(32, 32, 32, 0.3019607843) 0%, rgba(66, 66, 66, 0.4) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.262745098);
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0px 0px 79px rgba(255, 255, 255, 0.2941176471), 0px 0px 8px rgba(0, 0, 0, 0.3254901961);
+    box-shadow: inset 0px 0px 79px rgba(255, 255, 255, 0.2941176471), 0px 0px 8px rgba(0, 0, 0, 0.3254901961);
 }
 
 //左欄
@@ -645,9 +650,13 @@ main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
 //innerPage 中欄
 main.innerPage .center .midSide .midTop,
 main.innerPage .center .midSide .midBottom { 
-    background: $BG_color_2;
+    background: #ffffff40;
     border-radius: 5px;
     box-shadow: 0 5px 10px -5px $boxShadow_2;
+    border: 2px solid rgba(255, 255, 255, 0.262745098);
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0px 0px 79px rgba(255, 255, 255, 0.2941176471), 0px 0px 8px rgba(0, 0, 0, 0.3254901961);
+    box-shadow: inset 0px 0px 79px rgba(255, 255, 255, 0.2941176471), 0px 0px 8px rgba(0, 0, 0, 0.3254901961);
 }
 
 //內頁標題字

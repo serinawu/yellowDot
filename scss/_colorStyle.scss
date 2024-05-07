@@ -1,13 +1,14 @@
 //主色
-$mainColor: #ffb21d;
+$mainColor: #2A23EB;
 $subColor: #131313;
-$mainMixColor: linear-gradient(to right, #ffb21d 0%, #fb890e 100%);
+$subColor-2: #a1ea22;
+$mainMixColor: linear-gradient(to right, #181576 0%, #2A23EB 100%);
 $hightLightMix: linear-gradient(to right, #a1ea22 0%, #34da14 100%);
 
 //字色
 $mainFONT: #1a1a1a;
 $subFONT: #ffffff;
-$main_title_linear: linear-gradient(to top, #ffb21d 0%, #fb890e 100%);
+$main_title_linear: linear-gradient(to top, #a1ea22 0%, #34da14 100%);
 $sub_title_linear: linear-gradient(to top, #a1ea22 0%, #34da14 100%);
 $smallTitle: #c5c5c5;
 $gameTitle: #35c519;
@@ -25,8 +26,8 @@ $liHOV_bg: linear-gradient(to right, #333333 0%, #0e0e0e 75%);
 $swiperBTN: #ffffff60;
 
 //mq
-$mqBG: linear-gradient(to right, #ffb21d 3%, #ffb21d 24%, #ffeb7a 54%, #ffb21d 81%, #ffb21d 96%);
-$mqTitleBG: linear-gradient(to right, #ffb21d 0%, #fb890e 100%);
+$mqBG: $subColor-2;
+$mqTitleBG: $hightLightMix;
 $mqTiShadow: #0000003a;
 $mqTextBOxBG: #ffffff;
 
@@ -41,7 +42,7 @@ $asideBorderHOV: #666666;
 $gameBlockBG: linear-gradient(0deg, #0d0d0d 0%, #5757577c 100%);
 $gameBlockShadow: #000000d3;
 $gamepic: #000000;
-$detailLayerBG: linear-gradient(to right, #ffb21d 0%, #fb8f0f 100%);
+$detailLayerBG: $hightLightMix;
 $brandBtn: linear-gradient(to bottom, #292929 0%, #171717 100%);
 $betBorder: #a1ea22;
 $betoutLight: #a1ea226e;
@@ -107,4 +108,5 @@ $barTubeBG: #414141;
 }
 
 //footer
+$footer_BG: #777785;
 $navHOV_bg: linear-gradient(to top, #333333 0%, #0e0e0e 75%);

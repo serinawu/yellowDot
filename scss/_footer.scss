@@ -2,7 +2,7 @@ footer {
     width: 100%;
     min-width: 1000px;
     height: 260px;
-    background: $mainColor;
+    background: $footer_BG;
     position: absolute;
     bottom: 0;
     z-index: 999;
@@ -48,7 +48,7 @@ footer {
                     color: $mainColor;
 
                     p {
-                        color: #ffb21d;
+                        color: $subColor-2
                     }
                 }
             }
